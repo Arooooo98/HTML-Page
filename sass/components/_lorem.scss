@@ -1,0 +1,97 @@
+/* LOREM TEXT */
+.post {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__cards {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding-left: 0px;
+
+    list-style-type: none;
+    gap: 30px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    list-style: none;
+    line-height: 1.71;
+    padding-left: 0px;
+    margin: 0 auto;
+    & li {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  &__background {
+    background-color: #f5f4fa;
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    &__margin-top0 {
+      margin-top: 0;
+    }
+  }
+  &__images {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 25px;
+  }
+  &__text {
+    color: #757575;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 15px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+  }
+  &__heading {
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+/* LOREM END*/
+
+@media screen and (min-width: 768px) {
+  .post {
+    &__text {
+      text-align: start;
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    & li {
+      /* calc((100% - numberOfGapsInRow * valueOfOneGap) / numberOfElementInRow) */
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+    &__background {
+      margin-top: 0px;
+    }
+    &__heading {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .post {
+    & li {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+  }
+}
