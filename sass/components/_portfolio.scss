@@ -133,6 +133,7 @@
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .portfolio__item .portfolio__text {
     flex-basis: calc((100% - 2 * 30px) / 3);
