@@ -1,25 +1,25 @@
 /*BUSINESS SECTION*/
 .business {
   background-image: url(../images/header-squad.jpg);
-  background-image: linear-gradient (to right, black);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  height: 600px;
-  padding-top: 0px;
-  margin: 0 auto;
+  padding-top: 200px;
   max-width: 1600px;
+  margin: 0 auto;
+  background-size: cover;
+  text-align: center;
+  height: 550px;
   &__title {
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: white;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    color: #ffffff;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
   }
   &__btn {
     background: #2196f3;

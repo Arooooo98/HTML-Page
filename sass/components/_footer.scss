@@ -7,7 +7,6 @@
 
 .footer {
   padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,12 +34,12 @@
     margin-top: 0px;
     margin-bottom: 9px;
   }
+
   &__contact-list {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
   }
-
   &__contact-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
@@ -50,18 +49,16 @@
       color: #2196f3;
     }
   }
-
   &__contact-item {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     margin-bottom: 60px;
     text-align: center;
-     &--margin-bottom {
-    margin-bottom: 9px;
+    &--margin-bottom {
+      margin-bottom: 9px;
+    }
   }
-  }
- 
 
   &__socials {
     font-weight: 700;
@@ -146,6 +143,13 @@
     letter-spacing: 0.06em;
     color: #fff;
     line-height: 1.88;
+    position: relative;
+    padding-right: 30px;
+  }
+  &__newsletter__svg {
+    right: 20px;
+    top: 12px;
+    position: absolute;
   }
 }
 

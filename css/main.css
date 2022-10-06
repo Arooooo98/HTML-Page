@@ -171,11 +171,12 @@
 
 .contact__svg__phone {
   width: 9px;
-  height: 24px;
+  height: 27px;
   margin-right: 8px;
   fill: #757575;
   padding-top: 8px;
   margin-left: 4px;
+  vertical-align: bottom;
 }
 .contact__svg__phone:hover {
   fill: #2196f3;
@@ -216,8 +217,8 @@
 /*OUR TEAM*/
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .team__title {
   font-style: normal;
@@ -363,7 +364,6 @@
 
 .footer {
   padding-top: 60px;
-  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,6 +515,13 @@
   letter-spacing: 0.06em;
   color: #fff;
   line-height: 1.88;
+  position: relative;
+  padding-right: 30px;
+}
+.footer__newsletter__svg {
+  right: 20px;
+  top: 12px;
+  position: absolute;
 }
 
 .mobile-footer {
@@ -653,16 +660,17 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 20px;
+  gap: 30px;
 }
 
 .portfolio__heading {
   color: black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   padding-bottom: 4px;
 }
@@ -672,8 +680,8 @@
   background-color: #fff;
   margin-bottom: 30px;
   position: relative;
-  max-width: 370px;
-  max-height: 404px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   z-index: 1001;
   cursor: pointer;
@@ -708,7 +716,7 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-top: 49px;
-  padding-left: 20px;
+  padding-left: 12px;
   text-align: left;
 }
 
@@ -737,7 +745,17 @@
   line-height: 19px;
 }
 
-@media screen and (min-width: 768px) {
+.portfolio__img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.portfolio__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 785px) {
   .button-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -746,6 +764,10 @@
   .portfolio__item .portfolio__text {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+  .portfolio__item {
+    max-width: 354px;
+    max-height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -776,8 +798,8 @@
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
   background-color: #fff;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  min-height: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -808,33 +830,44 @@
   z-index: 1000;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 /*BUSINESS SECTION*/
 .business {
   background-image: url(../images/header-squad.jpg);
-  background-image: linear-gradient to right, black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  height: 600px;
-  padding-top: 0px;
-  margin: 0 auto;
+  padding-top: 200px;
   max-width: 1600px;
+  margin: 0 auto;
+  background-size: cover;
+  text-align: center;
+  height: 550px;
 }
 .business__title {
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: white;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  color: #ffffff;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.4;
 }
 .business__btn {
   background: #2196f3;
@@ -881,8 +914,8 @@
 /* END BUSINESS SECTION */
 /*NASI KLIENCI*/
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .customers__heading {
   padding-bottom: 50px;
@@ -962,8 +995,8 @@
 /*Klienci koniec*/
 /* LOREM TEXT */
 .post {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .post__cards {
   font-family: "Roboto";
@@ -1082,7 +1115,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
-  width: 448px;
+  width: 90%;
   padding: 12px 16px;
 }
 .modal-form__textarea::-webkit-input-placeholder {
@@ -1122,7 +1155,7 @@
 .modal-form__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 90%;
   height: 40px;
   padding-left: 42px;
 }
@@ -1145,7 +1178,8 @@
   letter-spacing: 0.06em;
   color: #fff;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: none;
   cursor: pointer;
 }
@@ -1351,6 +1385,13 @@ input:focus-visible {
   text-decoration: none;
   color: #000;
 }
+.mobile-menu__link:hover {
+  color: #2196f3;
+}
+
+.mobile-menu__link--active {
+  color: #2196f3;
+}
 
 .mobile-menu-contact__list {
   list-style: none;
@@ -1403,6 +1444,7 @@ input:focus-visible {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: none;
+  padding-right: 15px;
 }
 
 .header-hamburger:hover {
@@ -1410,7 +1452,7 @@ input:focus-visible {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .header-mobile-button {
     display: none;
   }

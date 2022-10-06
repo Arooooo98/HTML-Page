@@ -50,6 +50,13 @@
 .mobile-menu__link {
   text-decoration: none;
   color: #000;
+  &:hover {
+    color: #2196f3;
+  }
+}
+
+.mobile-menu__link--active {
+  color: #2196f3;
 }
 
 .mobile-menu-contact__list {
@@ -100,6 +107,7 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: none;
+  padding-right: 15px;
 }
 
 .header-hamburger:hover {
@@ -107,7 +115,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .header-mobile-button {
     display: none;
   }
