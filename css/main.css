@@ -664,7 +664,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
-  gap: 10px;
+  gap: 14px;
 }
 
 .portfolio__heading {
@@ -685,7 +685,6 @@
   overflow: hidden;
   z-index: 1001;
   cursor: pointer;
-  padding-right: 20px;
 }
 .portfolio__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -756,7 +755,7 @@
   height: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.9px) {
   .button-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
