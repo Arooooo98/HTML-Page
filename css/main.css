@@ -1446,7 +1446,7 @@ input:focus-visible {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: none;
-  padding-right: 15px;
+  margin-right: 15px;
 }
 
 .header-hamburger:hover {
@@ -1454,14 +1454,18 @@ input:focus-visible {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768.1px) {
+.page-header__contact {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
   .header-mobile-button {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-header__contact {
-    display: none;
+    display: block;
     gap: 30px;
   }
 }
@@ -1470,7 +1474,7 @@ input:focus-visible {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation-list {
     display: none;
   }
