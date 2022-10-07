@@ -54,7 +54,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     padding-left: 0px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     &__heading {
       margin-right: 46px;
@@ -93,7 +93,6 @@
 }
 
 .contact__link__mail {
-  padding-right: 20px;
   width: 165px;
   font-family: "Roboto";
   font-style: normal;

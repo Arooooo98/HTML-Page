@@ -70,9 +70,7 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   padding-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -118,7 +116,6 @@
 }
 
 .contact__link__mail {
-  padding-right: 20px;
   width: 165px;
   font-family: "Roboto";
   font-style: normal;
@@ -1472,11 +1469,14 @@ input:focus-visible {
 @media screen and (min-width: 768px) {
   .page-header__contact li {
     font-size: 14px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 768px) {
   .navigation-list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .container {
